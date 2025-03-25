@@ -1,0 +1,127 @@
+/* styles/main.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #4b6cb7;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  .question {
+    margin-bottom: 2rem;
+  }
+  
+  .slider-container {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slider-container .slider {
+    width: 83%;
+  }
+  
+  .slider {
+    margin-bottom: 0.5rem;
+    appearance: none;
+    background: linear-gradient(to right, #4b6cb7 50%, #ddd 50%);
+    height: 24px;
+    border-radius: 12px;
+    outline: none;
+    transition: background 150ms ease-in-out;
+  }
+  
+  .slider::-webkit-slider-runnable-track {
+    height: 24px;
+    background: transparent;
+    border-radius: 12px;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    background: #4b6cb7;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    margin-top: -2px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .slider::-moz-range-track {
+    height: 24px;
+    background: transparent;
+    border-radius: 12px;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+    background: #4b6cb7;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 0 0.25rem;
+    box-sizing: border-box;
+  }
+  
+  button {
+    padding: 0.75rem 1.5rem;
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  button:hover {
+    background-color: #3a5499;
+  }
+  
+  #result-output,
+  #subtype-result-output {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .slider[data-filled] {
+    background-image: linear-gradient(to right, #4b6cb7 var(--fill, 0%), #ddd var(--fill, 0%));
+  }
+  

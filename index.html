@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enneagram Personality Inventory</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Enneagram Types and Subtypes Inventory (ETASI)</h1>
+  </header>
+
+  <main>
+    <section id="instructions">
+      <h2>Instructions</h2>
+      <p>This test consists of two parts:</p>
+      <ul>
+        <li>The first part includes questions related to individuals' general tendencies, attitudes, personal characteristics, and emotional inclinations.</li>
+        <li>The second part addresses tendencies and pursuits related to self-protection/survival instinct, social instinct, and intimacy instinct.</li>
+      </ul>
+      <p>Do not answer the statements in this test based on a single event or temporary situation in your life. When responding to the questions, evaluate your life as a whole and consider your relationships and general attitudes. Respond not as who you wish to be, but as you generally are. There are no right or wrong answers in this test; its purpose is to identify people's tendencies in thoughts, feelings, and behaviors.</p>
+      <p>Evaluate each statement as a whole. If the entire statement applies to you, choose "Strongly agree"; if it somewhat applies, choose "Somewhat agree"; if you’re unsure, choose "Neutral"; if it mostly doesn’t apply, choose "Somewhat disagree"; and if it doesn’t apply at all, choose "Strongly disagree."</p>
+    </section>
+
+    <h1>Ennea-type Questions</h1>
+
+    <section id="quiz-container">
+      <!-- Type questions will be dynamically loaded here -->
+    </section>
+
+    <button id="submit-btn">Submit Type Scores</button>
+    <section id="results" hidden>
+      <h2>Your Enneagram Type Results</h2>
+      <div id="result-output"></div>
+    </section>
+
+    <hr />
+
+    <h1>Subtype Questions</h1>
+
+    <section id="subtype-quiz-container">
+      <!-- Subtype questions will be dynamically loaded here -->
+    </section>
+
+    <button id="subtype-submit-btn">Submit Subtype Scores</button>
+    <section id="subtype-results" hidden>
+      <h2>Your Instinctual Subtype Result</h2>
+      <div id="subtype-result-output"></div>
+    </section>
+  </main>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
